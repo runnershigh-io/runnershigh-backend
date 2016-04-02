@@ -1,4 +1,4 @@
-from revolvr import server
+from runnershigh import server
 import config
 
 if __name__ == "__main__":

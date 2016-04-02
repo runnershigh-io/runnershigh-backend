@@ -1,5 +1,5 @@
 import datetime
-from revolvr import db, bcrypt
+from runnershigh import db, bcrypt
 
 
 class Roles(db.Model):
@@ -25,8 +25,6 @@ class Users(db.Model):
     created = db.Column(db.DateTime, default=datetime.datetime.utcnow())
 
     roles = db.relationship('Roles')
-    content = db.relationship('Content')
-    content_views = db.relationship('ContentViews')
 
     @property
     def serialize_auth(self):

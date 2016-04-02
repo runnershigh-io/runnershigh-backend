@@ -1,11 +1,12 @@
-
 from flask import Blueprint, request, make_response
 from flask.ext.login import login_required, login_user, logout_user, \
     current_user
-from revolvr.user.models import Users
-from revolvr import db, bcrypt, login_manager
+from runnershigh.user.models import Users
+from runnershigh import db, bcrypt, login_manager
+
 
 mod = Blueprint('auth', __name__)
+
 
 @login_manager.user_loader
 def user_loader(username):

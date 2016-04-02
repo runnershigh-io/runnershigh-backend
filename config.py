@@ -1,4 +1,4 @@
-DATABASE_URI = 'postgresql://runnershigh_user:password@localhost:5432/runnershigh_db'
+DATABASE_URI = 'postgresql://runnershigh_user:password@localhost:5432/runnershigh'
 
 SECRET_KEY = 'sshhhh'
 

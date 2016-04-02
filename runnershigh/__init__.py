@@ -18,11 +18,11 @@ bcrypt = Bcrypt(server)
 login_manager = LoginManager()
 login_manager.init_app(server)
 
-from revolvr.auth.views import mod as AuthModule
+from runnershigh.auth.views import mod as AuthModule
 server.register_blueprint(AuthModule)
 
-from revolvr.path.views import mod as PathModule
+from runnershigh.path.views import mod as PathModule
 server.register_blueprint(PathModule)
 
-from revolvr.user.views import mod as UserModule
+from runnershigh.user.views import mod as UserModule
 server.register_blueprint(UserModule)
